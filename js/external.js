@@ -63,3 +63,21 @@ if (premiumMember && offerExpired === true || twoOrMore && offerExpired) {
     alert("You may not purchase the item.")
 }
 
+/* ===== Boolean Solution to Student Enrollment=====*/
+
+let classIsFull = confirm("Is the class full?");
+let scheduleConflicts = confirm("Does the class conflict with schedule?");
+
+let studentCanEnroll = !classIsFull && !scheduleConflicts;
+
+alert(`It is ${studentCanEnroll} that you can enroll in this class?`)
+
+/*===== Boolean Solution for Product Offer =====*/
+
+let peronBoughtMoreThanTwoItems = confirm("Did the person buy more than two item");
+let offerHasExpired = confirm("Is the offer still valid?");
+let premiumMember = confirm("Is the person a premium member?");
+
+let productOfferCanBeApplied = (peronBoughtMoreThanTwoItems || premiumMember) && offerHasExpired;
+
+alert(`It is ${productOfferCanBeApplied} that the pruduct can be purchased.`)
