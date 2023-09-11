@@ -21,7 +21,8 @@ function sayHello(name = 'friend') {
  * console.log 'helloMessage' to check your work
  */
 
-let helloMessage = sayHello('Kyle');
+const helloMessage = sayHello('Kyle');
+console.log(helloMessage)
 
 /**
  * TODO:
@@ -81,11 +82,9 @@ function calculateTip(percent, total){
  * then display the dollar amount they should tip
  */
 
-let stringPercent = prompt("What is your tip percentage as a decimal?");
-let stringTotal = prompt("What it your bill total?")
-let percent = parseInt(stringPercent);
-let total = parseInt(stringTotal);
-alert(calculateTip(percent, total))
+// let promptPercent = prompt("What is your tip percentage?");
+// let promptBill = prompt("What it your bill total?")
+// alert(`The amount you should pay in tips is $${calculateTip(promptPercent/100, promptBill)}!`)
 
 /**
  * TODO:
