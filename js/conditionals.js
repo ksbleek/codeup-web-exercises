@@ -22,17 +22,17 @@
  * console.logging the function's return value
  */
 
-// function analyzeColor(str) {
-//     if(str == 'blue') {
-//         return "The color blue is the color of the sky.";
-//     } else if(str == 'red') {
-//         return "The color red is the color of fire.";
-//     } else if(str == 'green') {
-//         return "The color green is the color of grass.";
-//     } else {
-//         return "The color " + str + " is not a primary color.";
-//     }
-// }
+function analyzeColor(str) {
+    if(str == 'blue') {
+        return "The color blue is the color of the sky.";
+    } else if(str == 'red') {
+        return "The color red is the color of fire.";
+    } else if(str == 'green') {
+        return "The color green is the color of grass.";
+    } else {
+        return "The color " + str + " is not a primary color.";
+    }
+}
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -101,18 +101,18 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
-function calculateTotals(luckyNum, total) {
-    if (luckyNum == 0) {
+function calculateTotals(luckyNumber, total) {
+    if (luckyNumber == 0) {
         return total;
-    } else if (luckyNum == 1) {
+    } else if (luckyNumber == 1) {
         return total - (total * .1);
-    } else if (luckyNum == 2) {
+    } else if (luckyNumber == 2) {
         return total - (total * .25);
-    } else if (luckyNum == 3) {
+    } else if (luckyNumber == 3) {
         return total - (total * .35);
-    } else if (luckyNum == 4) {
+    } else if (luckyNumber == 4) {
         return total - (total * .5);
-    } else if (luckyNum == 5) {
+    } else if (luckyNumber == 5) {
         return "Everything is free!";
     } else {
         return "That is not one of the lucky numbers 1-5.";
@@ -130,7 +130,7 @@ function calculateTotals(luckyNum, total) {
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
 // let billTotal = prompt("What is the total of your bill?");
-// alert(calculateTotals(luckyNumber, billTotal))
+// alert(`Your lucky number was ${luckyNumber} at the original price of $${billTotal} you owe $${calculateTotals(luckyNumber, billTotal)}.`)
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -152,8 +152,7 @@ function calculateTotals(luckyNum, total) {
 
 let confirmation = confirm("Would you like to enter a number");
 
-let givenNumber = confirmation ? prompt("Give a number?") :
-    ("cancel");
+let givenNumber = confirmation ? prompt("Give a number?") : console.log("Did not wish to enter a number?");
 let changedNumber = parseInt(givenNumber);
 
   if(isNaN(changedNumber)){
