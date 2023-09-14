@@ -16,9 +16,9 @@ function showMultiplicationTable(num){
 //         return `${num} is odd.`;
 //     }
 // }
-
+//
 // for (let i = 0; i < 10; i++){
-//     let x = Math.floor(Math.random() * (201 - 20))
+//     let x = Math.floor(Math.random() * (221 - 20))
 //     console.log(evenOdd(x))
 // }
 
