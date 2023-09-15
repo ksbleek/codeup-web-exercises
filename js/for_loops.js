@@ -4,7 +4,7 @@
 
 function showMultiplicationTable(num){
     for (let i = 0;i <= 10; i++)
-        console.log(num * i)
+        console.log(`${num} * ${i} = ${num * i}`)
 }
 
 /*===== Exercise 3 =====*/
@@ -13,7 +13,7 @@ function showMultiplicationTable(num){
 //     if (num % 2){
 //         return `${num} is even.`;
 //     } else {
-//         return `${num} is odd.`;
+//         return `${num} is odd.`
 //     }
 // }
 //
