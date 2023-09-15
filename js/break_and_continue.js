@@ -1,10 +1,12 @@
 "use strict";
-
+function isEven(num){
+    return num % 2 === 0;
+}
 // let i = 0;
-
+//
 // while(true){
-//     i = parseInt(prompt("Give a number between 1 and 50?"));
-//     if(i > 1 && i < 50){
+//     i = parseInt(prompt("Give an odd number between 1 and 50?"));
+//     if(i > 1 && i < 50 && !isEven(i)){
 //         break;
 //     }
 // }
