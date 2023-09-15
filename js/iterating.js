@@ -59,14 +59,14 @@ console.log(names);
  */
 let numbers = [1, 2, 3, 4, 5]
 
-function first(array){
-    return console.log(array[0]);
+function first(arr){
+    return console.log(arr[0]);
 }
 
-function second(array){
-    return console.log(array[1]);
+function second(arr){
+    return console.log(arr[1]);
 }
 
-function last(array){
-    return console.log(array[array.length - 1]);
+function last(arr){
+    return console.log(arr[arr.length - 1]);
 }
