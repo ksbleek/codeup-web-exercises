@@ -10,8 +10,12 @@ function isEven(num){
 //         break;
 //     }
 // }
-// for(let j = 0; j <= 50; j++){
+// for(let j = 1; j <= 50; j+=2) {
+//     if (!isEven(j)) {
+//         console.log(`Here is odd number: ${j}`)
+//     }
 //     if(j === i){
+//         console.log(`Yikes! Skipping number: ${j}`)
 //         continue;
 //     }
 //     console.log(j)
