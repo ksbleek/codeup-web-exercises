@@ -10,7 +10,11 @@
  *  > console.log(person.firstName) // "Rick"
  *  > console.log(person.lastName) // "Sanchez"
  */
-
+ let person = {
+     firstName: "Kyle",
+     lastName: "Bleeker",
+}
+console.log(person)
 /**
  * TODO:
  * Add a sayHello method to the person object that returns a greeting using
@@ -20,7 +24,9 @@
  * Example
  * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
  */
-
+person.sayHello = function(){
+    return `Hello from ${this.firstName} ${this.lastName}!`
+}
 /** TODO:
  * HEB has an offer for the shoppers that buy products amounting to
  * more than $200. If a shopper spends more than $200, they get a 12%
@@ -35,12 +41,23 @@
  * and console.log the relevant messages for each person
  */
 
-// var shoppers = [
-//     {name: 'Cameron', amount: 180},
-//     {name: 'Ryan', amount: 250},
-//     {name: 'George', amount: 320}
-// ];
 
+
+var shoppers = [
+    {name: 'Cameron', amount: 180},
+    {name: 'Ryan', amount: 250},
+    {name: 'George', amount: 320}
+];
+
+shoppers.forEach(function(shopper){
+    if(shopper.amount < 200){
+        console.log(`${shopper.name} does not spend over $200 so does not qualify for discount and must pay their full amount of ${shopper.amount}.`)
+    } else {
+        let discount = shopper.amount * .12;
+        let finalPrice = shopper.amount - discount;
+        console.log(`${shopper.name} purchased $${shopper.amount} worth of product and gets a 12% discount of $${discount} bringing the total to $${finalPrice}.`)
+    }
+})
 /** TODO:
  * Create an array of objects that represent books and store it in a
  * variable named `books`. Each object should have a title and an author
@@ -53,6 +70,45 @@
  * > console.log(books[0].author.firstName) // "Douglas"
  * > console.log(books[0].author.lastName) // "Adams"
  */
+
+let books = [
+    {
+        title: "Dune",
+        author: {
+            firstName: "Frank",
+            lastName: "Herbert",
+        }
+    },
+    {
+        title: "Lord of the Rings",
+        author: {
+            firstName: "John",
+            lastName: "Tolkien",
+        }
+    },
+    {
+        title: "Sword in the Storm",
+        author: {
+            firstName: "David",
+            lastName: "Gemmell",
+        }
+    },
+    {
+        title: "A Wizard of Earthsea",
+        author: {
+            firstName: "Ursula",
+            lastName: "Le Guin",
+        }
+    },
+    {
+        title: "Master of Earth and Water",
+        author: {
+            firstName: "Diana",
+            lastName: "Paxson",
+        }
+    },
+
+];
 
 /**
  * TODO:
@@ -79,6 +135,18 @@
  *      ...
  */
 
+function printBooks(books) {
+    console.log("Here are the dogs:");
+    for (const books of books) {
+        printBooks(book);
+    }
+}
+
+function printBook({name, age, gender}) {
+    console.log(`Book # ${}
+    Age: ${age}
+    Gender: ${gender}
+-----------------------------`);
 /**
  * Bonus:
  * - Create a function named `createBook` that accepts a title and author
