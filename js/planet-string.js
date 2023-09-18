@@ -26,5 +26,5 @@ let planetsBr = planetsArray.join("<br>");
 console.log(planetsBr)
 /* This could be used to list out planets vertically in html. */
 
-let planetUl = `<ul>${planetsArray.join("<li>")}</ul>`
+let planetUl = `<ul><li>${planetsArray.join("<li>")}</ul>`
 console.log(planetUl)
