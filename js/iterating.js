@@ -14,7 +14,7 @@ let names = [`Steve`, `Kyle`, `Matt`, `Jaba`];
  * array.
  */
 
-console.log(names);
+console.log(names.length);
 
 /**
  * TODO:
@@ -60,13 +60,16 @@ console.log(names);
 let numbers = [1, 2, 3, 4, 5]
 
 function first(arr){
-    return console.log(arr[0]);
+    return arr[0];
 }
+console.log(first(names))
 
 function second(arr){
-    return console.log(arr[1]);
+    return arr[1];
 }
+console.log(second(names))
 
 function last(arr){
-    return console.log(arr[arr.length - 1]);
+    return arr[arr.length - 1];
 }
+console.log(last(names))
