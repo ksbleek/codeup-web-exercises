@@ -135,18 +135,16 @@ let books = [
  *      ...
  */
 
-function printBooks(books) {
-    console.log("Here are the dogs:");
-    for (const books of books) {
-        printBooks(book);
+function printBooks(books){
+    for (let i = 0; i < books.length; i++) {
+        const book = books[i];
+        console.log(`Book # ${i+1}
+        Title: ${book.title}
+        Author: ${book.author.firstName} ${book.author.lastName}
+        ----`);
     }
 }
-
-function printBook({name, age, gender}) {
-    console.log(`Book # ${}
-    Age: ${age}
-    Gender: ${gender}
------------------------------`);
+printBooks(books);
 /**
  * Bonus:
  * - Create a function named `createBook` that accepts a title and author
@@ -157,3 +155,15 @@ function printBook({name, age, gender}) {
  *   outputs the information described above. Refactor your loop to use your
  *   `showBookInfo` function.
  */
+
+function createBooks(title, firstName, lastName) {
+    const book = {
+        title,
+        author: {
+            firstName,
+            lastName,
+        },
+    }
+    return book;
+}
+books.push(createBooks("Troy", "David", "Gemmell"));
