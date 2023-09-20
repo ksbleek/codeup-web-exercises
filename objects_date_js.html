@@ -10,7 +10,7 @@
 
     // todo:
     // Create an array of months for printing dates
-    let months = ["January", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "August", "Sep", "Oct", "Nov", "Dec"];
+    const months = ["January", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "August", "Sep", "Oct", "Nov", "Dec"];
 
     // todo:
     // Create the date corresponding to your birthday using the JavaScript Date object.
@@ -19,7 +19,7 @@ let jsBirthdate = new Date(1987, 7, 17);
 console.log(jsBirthdate)
     // todo:
     // Log your birthday in the format: January 1, 2014 using the JavaScript Date object.
-    let myBDate = jsBirthdate.toLocaleDateString('en-us', { month:"long", day:"numeric",  year:"numeric"})
+    let myBDate = jsBirthdate.toLocaleDateString('en-us', { month:"long", day:"numeric", year:"numeric"})
     // See link below for methods needed:
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Getter
     console.log(`Here is my birthday using JavaScript: ${myBDate}`);
