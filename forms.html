@@ -8,5 +8,29 @@
         <header>
             <h1>Register With Us!</h1>
         </header>
+        <form method="POST" action="https://request-inspector.glitch.me/">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="username">Username:</label>
+                <input id="username" name="username" type="text" placeholder="Username">
+                <br><br>
+                <label for="password">Password:</label>
+                <input id="password" name="password" type="password" placeholder="password">
+            </fieldset>
+            <fieldset>
+                <legend>Bio</legend>
+                <label for="bio"></label>
+                <textarea name="bio" id="bio" placeholder="Enter bio here..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Extra info</legend>
+                <label for="findinfo" name="findinfo">Where did you hear about us?</label><br>
+                <input name="billboard" value="Billboard" id="findinfo" type="radio"><label></label><br>
+                <input name="radioadvertising" value="Radio Advertising" id="findinfo" type="radio"><br>
+                <input name="internetadvertisment" value="Internet Advertisement" id="findinfo" type="radio"><br>
+                <input name="other" value="Other" id="findinfo" type="radio"><br>
+
+            </fieldset>
+        </form>
     </body>
 </html>
