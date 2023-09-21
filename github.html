@@ -34,21 +34,21 @@
         </tr>
         <tr>
             <td>
-                <img src="https://fer-uig.glitch.me" alt="user-icon" /><a href="">Kent Beck</a><p>Kent Beck</p>
+                <img class="user-icon" src="https://fer-uig.glitch.me" alt="user-icon" /><a href="">Kent Beck</a><p>Kent Beck</p>
             </td>
             <td>Member</td>
             <td>X Team</td>
         </tr>
         <tr>
             <td>
-                <img src="https://fer-uig.glitch.me" alt="user-icon" /><a href="">Codeup Instruction Staff</a><p>CodeupInstructors</p>
+                <img class="user-icon" src="https://fer-uig.glitch.me" alt="user-icon" /><a href="">Codeup Instruction Staff</a><p>CodeupInstructors</p>
             </td>
             <td>Member</td>
             <td>X Team</td>
         </tr>
         <tr>
             <td>
-                <img src="https://fer-uig.glitch.me" alt="user-icon" /><a href="">Martin Fowler</a><p>Martin Fowler</p>
+                <img class="user-icon" src="https://fer-uig.glitch.me" alt="user-icon" /><a href="">Martin Fowler</a><p>Martin Fowler</p>
             </td>
             <td>Member</td>
             <td>X Team</td>
@@ -60,4 +60,9 @@
     <a href="">Terms</a>&nbsp;<a href="">Privacy</a>&nbsp;<a href="">Security</a>&nbsp;<a href="">Status</a>&nbsp;<a href="">Help</a>&nbsp;<a href="">Contract</a>&nbsp;<a href="">API</a>&nbsp;<a href="">Training</a>
 </footer>
 </body>
+<script>
+    for (let e of document.getElementsByClassName('user-icon')) {
+        e.src = 'https://fer-uig.glitch.me?r='+ Math.random();
+    }
+</script>
 </html>
