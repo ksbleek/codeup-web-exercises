@@ -12,18 +12,18 @@ div.message {
     border-radius: 5px;
 }
 div.message-info {
-    background-color: cornflowerblue;
-    color: #064fda;
+    background-color: #cddeff;
+    color: #463f9e;
 }
 div.message-success{
-    background-color: lightgreen;
-    color: #508550;
+    background-color: #cff3da;
+    color: #1b6f3b;
 }
 div.message-warning{
-    background-color: lightgoldenrodyellow;
-    color: #a2a286;
+    background-color: #fcfbc9;
+    color: #8f7c21;
 }
 div.message-error{
-    background-color: rosybrown;
-    color: #463434;
+    background-color: #fad3d7;
+    color: #7c0e28;
 }
