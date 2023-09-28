@@ -114,3 +114,10 @@ button.btn.btn-login {
     right:  0;
     z-index: 20;
 }
+#register-now{
+    margin: auto;
+    color: #b5b9bd;
+}
+#register-bold{
+    font-weight: bold;
+}
