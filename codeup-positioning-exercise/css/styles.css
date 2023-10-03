@@ -13,8 +13,7 @@ body {
     max-width: 530px;
     box-shadow: 0 0 104px -40px rgba(0, 0, 0, 0.25);
     z-index: 10;
-    position: absolute;
-    top: 200px;
+    position: relative;
 }
 
 .container.login h1 {
