@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<div id="page-wrapper">
+<div></div>
+</div>
+<script>
+    "use strict";
+    let keysPressed = "";
+    const page = document.querySelector("#page-wrapper")
+    document.addEventListener("keyup", function (event){
+        keysPressed += event.key;
+        if(keysPressed.includes("ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightabEnter")){
+            page.style.backgroundColor = "blue"
+        }
+    })
+    document.addEventListener("keyup", event => console.log(event.key) );
+</script>
+</body>
+</html>
