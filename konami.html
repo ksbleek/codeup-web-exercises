@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Konami Code</title>
+    <link rel="stylesheet" href="css/konami.css">
 </head>
 <body>
-<h1>Konami Code</h1>
 <div id="page-wrapper">
-<div></div>
+    <h1 id="title">Konami Code</h1>
+    <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Konami_logo_red.svg"class="hidden" alt="logo">
+    <audio src="Sound/konami/1-up.mp3" id="audio"></audio>
+    <audio src="Sound/konami/area-clear.mp3" id="audio2"></audio>
+    <img id="contra" alt="contra" src="https://cdn.vox-cdn.com/thumbor/ENUM6PjqAynLG0EKytMC14P_tmc=/0x0:1882x1200/1820x1213/filters:focal(831x416:1131x716):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/67115234/contra_art.0.jpg" class="hidden">
 </div>
 <script>
     "use strict";
     let keysPressed = "";
     const page = document.querySelector("#page-wrapper")
+    const title = document.querySelector("#title")
+    const logo = document.querySelector("#logo")
+    const audio = document.querySelector("#audio")
+    const audio2 = document.querySelector("#audio2")
+    const game = document.querySelector("#contra")
     document.addEventListener("keyup", function (event){
         keysPressed += event.key;
         if(keysPressed.includes("ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightabEnter")){
-            page.style.backgroundColor = "blue"
+            audio.play()
+            alert("You have added 30 lives!")
+            page.classList.add("blue")
+            title.classList.add("hidden")
+            logo.classList.remove("hidden")
+            game.classList.remove("hidden")
+            audio2.play()
         }
     })
     document.addEventListener("keyup", event => console.log(event.key) );
