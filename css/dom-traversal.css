@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#all-content{
+    margin: 20px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+header{
+    margin-top: 15px;
+}
+#gizmos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+}
+.gizmo {
+    flex-basis: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 10px 0;
+    gap: 10px;
+}
+.gizmo img {
+    width: 100%;
+}
+.gizmo p{
+    padding: 0 15px;
+}
