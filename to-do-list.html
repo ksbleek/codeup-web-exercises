@@ -39,12 +39,15 @@ const taskList = document.querySelector("#to-do-list");
 const done = document.querySelector(".btn-danger")
 
 submitBtn.addEventListener("click", function (event){
+    event.preventDefault();
 if (taskItem.value === "") {
     confirm("Text cannot be blank");
+    return false;
 } else if (taskList.children.length >= 10){
     confirm("Complete one or more of list items before adding a new one.")
+    return false;
 } else {
-    event.preventDefault();
+
     const newListItem = document.createElement("li");
     newListItem.classList.add("to-do-item", "list-group-item", "d-flex", "justify-content-between", "align-items-center");
     taskList.appendChild(newListItem)
