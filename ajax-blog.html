@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="postsDiv">
+
+</div>
+<script>
+    "use strict"
+
+    const postDiv = document.querySelector("#postsDiv")
+
+    fetch('/data/blog.json')
+        .then(response => response.json())
+        .then(data => createDiv(data))
+
+    function createDiv(item){
+        for (let i = 0; i < item.length; i++) {
+            const div = document.createElement("div");
+            div.innerHTML = `<h4>${item[i].title}</h4><p>${item[i].content}</p>`;
+            postDiv.appendChild(div)
+        }
+    }
+</script>
+</body>
+</html>
