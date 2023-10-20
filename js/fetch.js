@@ -11,6 +11,6 @@ const result = getUserInformation('ksbleek')
         }
     })
 
-
+console.log(result)
 
 

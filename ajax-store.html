@@ -23,9 +23,22 @@
 <script>
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
-.fetch('/data/package.json')
+    fetch('/data/inventory.json')
         .then(response => response.json())
-        .then(data => console.log(data));
+        .then(data => createInventoryRow(data))
+
+    function createInventoryRow(inventory){
+        for (let i = 0; i < inventory.length; i++) {
+            createInventoryItemRow(inventory[i])
+    }
+    function createInventoryItemRow(item){
+        let tbody = document.querySelector("#insertProducts")
+        let firstRow = document.createElement("tr")
+        firstRow.innerHTML = `<td>${item.title}</td><td>${item.quantity}</td><td>${item.price}</td><td>${item.categories}</td>`
+        tbody.appendChild(firstRow)
+    }
+    }
+
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields

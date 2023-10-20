@@ -1,11 +1,12 @@
-{
+[
+  {
     "title": "Hammer",
     "quantity": 25,
     "categories": [
       "tool"
     ],
     "price": 20
-}, {
+  }, {
   "title": "Drill",
   "quantity": 5,
   "categories": [
@@ -30,3 +31,4 @@
   ],
   "price": 10
 }
+]
