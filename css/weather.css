@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#card-container{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#card-container > div {
+    padding: 0;
+}
+.card-header{
+    text-align: center;
+}
+#map-container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 500px;
+}
+#map {
+    margin: 40px;
+    width: 100vw;
+    height: 500px;
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#card-container > div {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
