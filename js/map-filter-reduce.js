@@ -71,7 +71,7 @@ const userIntro = instructorsIntro + " " + users.reduce(listOfNames, users[0].na
 console.log(userIntro)
 
 function listOfLanguages(setSoFar, user){
-    setSoFar.add(user.langua)
+    setSoFar.add(user.languages)
 }
 const listOfKnownLanguages = users.reduce(listOfLanguages, users[0].languages);
 console.log(listOfKnownLanguages)

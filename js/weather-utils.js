@@ -11,7 +11,12 @@ function dateFromTimeStamp(timeStamp){
     let month = appendLeadingZeroes(dateTime.getMonth() + 1);
     let day = dateTime.getUTCDate();
     let hours = dateTime.getHours();
-    return `${year}-${month}-${day}`;
+    return `${year}-${month}-${day}-${hours}`;
+}
+function firstDay(timeStamp){
+    let dateTime = new Date(timeStamp * 1000);
+    let day = dateTime.getUTCDate();
+    return day
 }
 
 function windCardinalDirection(degrees){

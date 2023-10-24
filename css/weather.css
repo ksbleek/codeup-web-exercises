@@ -3,17 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+nav{
+    border: 2px solid black;
+}
+header{
+    border: 2px solid black;
+    border-top: 1px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 3px 20px #000000;
+}
+#weatherBar{
+    display: flex;
+    align-items: center;
+}
+#currentTemp{
+    font-size: 100px;
+}
+#subweatherCurrent{
+    text-align: center;
+}
 #card-container{
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-#card-container > div {
-    padding: 0;
-}
 .card-header{
     text-align: center;
+}
+ul{
+    padding-right: 2rem;
+}
+ul > li {
+    list-style: none;
+    border-top:1px solid #000;
 }
 #map-container{
     display: flex;
