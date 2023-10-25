@@ -11,7 +11,7 @@ function dateFromTimeStamp(timeStamp){
     let month = appendLeadingZeroes(dateTime.getMonth() + 1);
     let day = dateTime.getUTCDate();
     let hours = dateTime.getHours();
-    return `${year}-${month}-${day}-${hours}`;
+    return `${year}-${month}-${day}`;
 }
 function firstDay(timeStamp){
     let dateTime = new Date(timeStamp * 1000);

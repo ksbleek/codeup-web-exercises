@@ -12,31 +12,34 @@
 </head>
 <body>
 <!--nav-->
-<nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">Weather App</span>
-        <span class="text-center">Current city:
-            <span id="selectedCity"></span>
-<!--            search-->
-            <form class="d-flex" role="search" id="searchForm">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchField">
-                <button class="btn btn-outline-success" type="submit" id="searchBtn">Search</button>
-            </form>
-        </span>
-    </div>
-</nav>
-<header class="navbar bg-body-tertiary">
-    <div class="container-fluid" id="currentWeather">
-
-    </div>
-</header>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1" id="navTitle">Weather App</span>
+            <span class="text-center">Current city:
+                <span id="selectedCity"></span>
+    <!--            search-->
+                <form class="d-flex" role="search" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchField">
+                    <button class="btn btn-outline-light" type="submit" id="searchBtn">Search</button>
+                </form>
+            </span>
+        </div>
+    </nav>
 <div id="all-content">
-    <div id="card-container">
+<!--current weather-->
+    <header class="navbar" id="header">
+        <div class="container-fluid" id="currentWeather">
 
-    </div>
-    <!--        map-->
-    <div id="map-container">
-        <div id="map">
+        </div>
+    </header>
+    <div>
+        <div id="card-container">
+
+        </div>
+        <!--        map-->
+        <div id="map-container">
+            <div id="map">
+            </div>
         </div>
     </div>
 </div>

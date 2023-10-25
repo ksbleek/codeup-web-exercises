@@ -4,13 +4,32 @@
     box-sizing: border-box;
 }
 nav{
+    min-width: 100dvh;
     border: 2px solid black;
+    background-color: #4f4f4f;
+    color: white;
+    box-shadow: inset 0.5em 0.5em 0.5em 0 rgba(255,255,255,0.5), inset -0.5em -0.5em 0.5em 0 rgba(0,0,0,0.5);
+
 }
-header{
+#navTitle{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    border: 6px solid white;
+    height: 100%;
+    border-radius: 20px;
+}
+#header{
+    color: white;
     border: 2px solid black;
     border-top: 1px;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 3px 20px #000000;
+    overflow: hidden;
+    background-image: url("../img/weatherapp/pexels-asad-photo-maldives-1591373.jpg");
+    background-size: cover;
+    background-position: center center;
+    opacity: 1;
+    box-shadow: inset 0.5em 0.5em 0.5em 0 rgba(255,255,255,0.5), inset -0.5em -0.5em 0.5em 0 rgba(0,0,0,0.5);
 }
 #weatherBar{
     display: flex;
@@ -20,15 +39,31 @@ header{
     font-size: 100px;
 }
 #subweatherCurrent{
+    font-size: 20px;
+    font-weight: bold;
+}
+#subweatherCurrent{
     text-align: center;
 }
+#all-content{
+    display: block;
+    background-image: radial-gradient(circle at top right,  #096388 30%, #080a33 70%);
+    box-shadow: inset 0.5em 0.5em 0.5em 0 rgba(255,255,255,0.5), inset -0.5em -0.5em 0.5em 0 rgba(0,0,0,0.5);
+}
 #card-container{
-    margin-top: 40px;
+    padding-top: 40px;
+    margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.card-header{
+#card-container > div{
+    color:  white;
+    background-color: #1276e1;
+    box-shadow: inset 0.5em 0.5em 0.5em 0 rgba(255,255,255,0.5), inset -0.5em -0.5em 0.5em 0 rgba(0,0,0,0.5);
+}
+#cardHeader{
+    margin: 10px;
     text-align: center;
 }
 ul{
